@@ -5,7 +5,7 @@
     restart_mode        =    'from_scratch'
 !    outdir              =    '.'
 !    wfcdir              =    '.'
-    pseudo_dir          =    '/Users/lseixas/Dropbox/QuantumESPRESSO/pseudos'
+    pseudo_dir          =    '~/espresso-5.2.1/pseudo'
     verbosity           =    'high'
     wf_collect          =    .true.
 !    disk_io             =    'low'
