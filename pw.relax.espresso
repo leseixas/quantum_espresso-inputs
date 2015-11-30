@@ -1,0 +1,136 @@
+&CONTROL
+    calculation         =    'relax'
+    prefix              =    'pwscf'
+    title               =    'Graphene'
+    restart_mode        =    'from_scratch'
+!    outdir              =    '.'
+!    wfcdir              =    '.'
+    pseudo_dir          =    '/Users/lseixas/Dropbox/QuantumESPRESSO/pseudos'
+    verbosity           =    'high'
+    wf_collect          =    .true.
+!    disk_io             =    'low'
+    etot_conv_thr       =    1.0D-8
+    forc_conv_thr       =    3.889D-4
+!    tefield             =    .false.
+!    dipfield            =    .false.
+!    lelfield            =    .false.
+!    nberrycyc           =    1
+!    lorbm               =    .false.
+!    lberry              =    .false.
+!    gdir                =    3
+!    nppstr              =    10
+!    lfcpopt             =    .false.
+/
+
+&SYSTEM
+    ibrav               =    0
+    nat                 =    4
+    ntyp                =    2
+    nbnd                =    30
+!    tot_charge          =    0.0
+    ecutwfc             =    60.0
+!    ecutrho             =    240.0
+    nspin               =    1
+!    nosym               =    .true.
+!    noinv               =    .false.
+!    no_t_rev            =    .false.
+!    force_symmorphic    =    .false.
+!      noncolin          =    .false.
+!      lspinorb          =    .false.
+!    tot_magnetization   =    -1
+!    starting_magnetization(1) = 1.0
+!    starting_magnetization(2) = 0.0
+    occupations         =    'smearing'
+      smearing          =    'fermi-dirac'
+      degauss           =    1.D-3
+!    input_dft           =    'hse'
+
+! Hybrid XC functional
+!    ecutfock            =    240.0
+!    exx_fraction        =    0.25
+!    screening_parameter =    0.106
+!    exxdiv_treatment    =    'gygi-baldereschi'
+!    x_gamma_extrapolation = .false.
+!    nqx1 = 4, nqx2 = 4, nqx3 = 1
+
+! DFT+U
+!    lda_plus_u          =    .false.
+!    lda_plus_u_kind     =    0
+!    Hubbard_U(1)        =    0.D0
+!    Hubbard_J0(1)       =    0.D0
+!    Hubbard_alpha(1)    =    0.D0
+!    Hubbard_beta(1)     =    0.D0
+!    Hubbard_J(1)        =    0.D0
+!    U_projection_type   =    'atomic'
+
+! Electric fields
+!    edir                =    3
+!    emaxpos             =    0.5D0
+!    eopreg              =    0.1D0
+!    eamp                =    0.001
+
+!    constrained_magnetization = 'none'
+!    fixed_magnetization(1) = 0.D0
+!    lambda              =    1.D0
+
+! van der Waals correction (local)
+!    vdw_corr            =    'grimme-d2'
+!    london_s6           =    0.75
+!    london_rcut         =    200
+/
+
+&ELECTRONS
+!    adaptive_thr        =    .false.
+!    conv_thr_init       =    1.D-5
+!    conv_thr_multi      =    1.D-1
+    conv_thr            =    1.D-8
+    electron_maxstep    =    300
+    diagonalization     =    'david'
+    diago_david_ndim    =    4
+!    diago_full_acc      =    .false.
+    diago_thr_init      =    1.D-3
+!    mixing_mode         =    'plain'
+!    mixing_beta         =    0.7
+!    mixing_ndim         =    8
+!    mixing_fixed_ns     =    0
+!    tqr                 =    .false.
+
+! Electric field for (lelfield = .true.), 1 a.u. = 3.636D+11 V/m
+!    efield              =    0.D0
+!    efield_cart(1)      =    0.D0
+!    efield_cart(2)      =    0.D0
+!    efield_cart(3)      =    0.D0
+/
+
+&IONS
+    ion_dynamics        =    'bfgs'
+!    bfgs_ndim           =    1
+!    trust_radius_max    =    0.8
+!    trust_radius_min    =    0.001
+!    trust_radius_ini    =    0.5
+!    w_1                 =    0.01
+!    w_2                 =    0.5
+/
+
+&CELL
+!    cell_dynamics       =    'bfgs'
+!    cell_dofree         =    'xy'
+!    cell_factor         =    1.2
+!    press               =    0.0
+!    press_conv_thr      =    0.5
+/
+
+ATOMIC_SPECIES
+  C   12.011    C.pbe-mt_fhi.UPF
+
+CELL_PARAMETERS angstrom
+   2.1390827473 -1.235000000   0.000000000
+   2.1390827473  1.235000000   0.000000000
+   0.000000000   0.000000000  20.000000000
+
+ATOMIC_POSITIONS (crystal)
+C        0.000000000   0.000000000   0.500000000
+C        0.333333333   0.333333333   0.500000000
+
+K_POINTS automatic
+ 10 10 1   0  0  0
