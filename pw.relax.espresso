@@ -31,59 +31,86 @@
 
 &SYSTEM
     ibrav               =    0
-    nat                 =    4
-    ntyp                =    2
-    nbnd                =    30
-!    tot_charge          =    0.0
+    nat                 =    2
+    ntyp                =    1
+    nbnd                =    20
+!   tot_charge          =    0.0
     ecutwfc             =    60.0
-!    ecutrho             =    240.0
+!   ecutrho             =    240.0
+!   nr1  = 40, nr2  = 40, nr3  = 200
+!   nr1s = 40, nr2s = 40, nr3s = 200
     nspin               =    1
-!    nosym               =    .true.
-!    noinv               =    .false.
-!    no_t_rev            =    .false.
-!    force_symmorphic    =    .false.
-!      noncolin          =    .false.
-!      lspinorb          =    .false.
-!    tot_magnetization   =    -1
-!    starting_magnetization(1) = 1.0
-!    starting_magnetization(2) = 0.0
+!   noncolin            =    .false.
+!   lspinorb            =    .false.
+!   nosym               =    .true.
+!   nosym_evc           =    .false.
+!   noinv               =    .false.
+!   no_t_rev            =    .false.
+!   force_symmorphic    =    .false.
+!   space_group         =    0
+!   uniqueb             =    .false.
+!   origin_choice       =    1
+!   rhombohedral        =    .true.
+!   tot_magnetization   =    -1
+!   starting_magnetization(1) = 1.0
+!   starting_magnetization(2) = 0.0
+!   starting_spin_angle =    .false.
+!   angle1(1)           =    90
+!   angle2(1)           =    0
+!   constrained_magnetization = 'none'
+!   fixed_magnetization(1) = 0.D0
+!   lambda              =    1.D0
+!   report              =    1
+!   use_all_frac        =    .false.
     occupations         =    'smearing'
       smearing          =    'fermi-dirac'
       degauss           =    1.D-3
-!    input_dft           =    'hse'
+!   one_atom_occupations =   .false.
+!   q2sigma             =    0.1
+!   qcutz               =    0.0
+!   ecfixed             =    0.0
+!   input_dft           =    'hse'
 !
 !    Hybrid XC functional
-!    ecutfock            =    240.0
-!    exx_fraction        =    0.25
-!    screening_parameter =    0.106
-!    exxdiv_treatment    =    'gygi-baldereschi'
-!    x_gamma_extrapolation = .false.
-!    nqx1 = 4, nqx2 = 4, nqx3 = 1
+!   ecutfock            =    240.0
+!   exx_fraction        =    0.25
+!   screening_parameter =    0.106
+!   exxdiv_treatment    =    'gygi-baldereschi'
+!   ecutvcut            =    0.0
+!   x_gamma_extrapolation = .true.
+!   nqx1 = 4, nqx2 = 4, nqx3 = 1
 !
 !    DFT+U
-!    lda_plus_u          =    .false.
-!    lda_plus_u_kind     =    0
-!    Hubbard_U(1)        =    0.D0
-!    Hubbard_J0(1)       =    0.D0
-!    Hubbard_alpha(1)    =    0.D0
-!    Hubbard_beta(1)     =    0.D0
-!    Hubbard_J(1)        =    0.D0
-!    U_projection_type   =    'atomic'
-
-! Electric fields
-!    edir                =    3
-!    emaxpos             =    0.5D0
-!    eopreg              =    0.1D0
-!    eamp                =    0.001
-
-!    constrained_magnetization = 'none'
-!    fixed_magnetization(1) = 0.D0
-!    lambda              =    1.D0
+!   lda_plus_u          =    .false.
+!   lda_plus_u_kind     =    0
+!   Hubbard_U(1)        =    0.D0
+!   Hubbard_J0(1)       =    0.D0
+!   Hubbard_alpha(1)    =    0.D0
+!   Hubbard_beta(1)     =    0.D0
+!   Hubbard_J(1)        =    0.D0
+!   U_projection_type   =    'atomic'
+!   starting_ns_eigenvalue(2,1,2) = -1.d0
+!
+!    Electric fields
+!   edir                =    3
+!   emaxpos             =    0.5D0
+!   eopreg              =    0.1D0
+!   eamp                =    0.001
+!
+!   assume_isolated     =    'none'
+!   esm_bc              =    'pbc'
+!   esm_w               =    0.d0
+!   esm_efield          =    0.d0
+!   esm_nfit            =    4
+!   fcp_mu              =    0.d0
 
 ! van der Waals correction (local)
-!    vdw_corr            =    'grimme-d2'
-!    london_s6           =    0.75
-!    london_rcut         =    200
+!   vdw_corr            =    'grimme-d2'
+!   london_s6           =    0.75
+!   london_c6(1)        =    0.d0
+!   london_rcut         =    200
+!   xdm1                =    0.6836
+!   xdm2                =    1.5045
 /
 
 &ELECTRONS
