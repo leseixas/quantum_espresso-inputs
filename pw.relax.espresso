@@ -3,23 +3,30 @@
     prefix              =    'pwscf'
     title               =    'Graphene'
     restart_mode        =    'from_scratch'
-!    outdir              =    '.'
-!    wfcdir              =    '.'
+!   nstep               =     1
+!   outdir              =    '.'
+!   wfcdir              =    '.'
     pseudo_dir          =    '~/espresso-5.2.1/pseudo'
+!   lkpoint_dir         =    .true.
     verbosity           =    'high'
     wf_collect          =    .true.
-!    disk_io             =    'low'
-    etot_conv_thr       =    1.0D-8
+!   disk_io             =    'low'
+!   iprint              =    10
+!   tstress             =    .false.
+!   tprnfor             =    .false.
+!   dt                  =    20.D0
+!   max_seconds         =    1.D+7
+    etot_conv_thr       =    1.0D-4
     forc_conv_thr       =    3.889D-4
-!    tefield             =    .false.
-!    dipfield            =    .false.
-!    lelfield            =    .false.
-!    nberrycyc           =    1
-!    lorbm               =    .false.
-!    lberry              =    .false.
-!    gdir                =    3
-!    nppstr              =    10
-!    lfcpopt             =    .false.
+!   tefield             =    .false.
+!   dipfield            =    .false.
+!   lelfield            =    .false.
+!   nberrycyc           =    1
+!   lorbm               =    .false.
+!   lberry              =    .false.
+!   gdir                =    3
+!   nppstr              =    10
+!   lfcpopt             =    .false.
 /
 
 &SYSTEM
@@ -44,16 +51,16 @@
       smearing          =    'fermi-dirac'
       degauss           =    1.D-3
 !    input_dft           =    'hse'
-
-! Hybrid XC functional
+!
+!    Hybrid XC functional
 !    ecutfock            =    240.0
 !    exx_fraction        =    0.25
 !    screening_parameter =    0.106
 !    exxdiv_treatment    =    'gygi-baldereschi'
 !    x_gamma_extrapolation = .false.
 !    nqx1 = 4, nqx2 = 4, nqx3 = 1
-
-! DFT+U
+!
+!    DFT+U
 !    lda_plus_u          =    .false.
 !    lda_plus_u_kind     =    0
 !    Hubbard_U(1)        =    0.D0
