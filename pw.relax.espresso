@@ -134,10 +134,10 @@
 !   startingwfc         =    'atomic+random'
 !
 ! Electric field for (lelfield = .true.), 1 a.u. = 3.636D+11 V/m
-!    efield              =    0.D0
-!    efield_cart(1)      =    0.D0
-!    efield_cart(2)      =    0.D0
-!    efield_cart(3)      =    0.D0
+!   efield              =    0.D0
+!   efield_cart(1)      =    0.D0
+!   efield_cart(2)      =    0.D0
+!   efield_cart(3)      =    0.D0
 /
 
 &IONS
@@ -166,17 +166,18 @@
 /
 
 &CELL
-!    cell_dynamics       =    'bfgs'
-!    cell_dofree         =    'xy'
-!    cell_factor         =    1.2
-!    press               =    0.0
-!    press_conv_thr      =    0.5
+!   cell_dynamics       =    'bfgs'
+!   cell_dofree         =    'xy'
+!   cell_factor         =    1.2
+!   press               =    0.0
+!   press_conv_thr      =    0.5
+!   wmass               =    10.97
 /
 
 ATOMIC_SPECIES
   C   12.011    C.pbe-mt_fhi.UPF
 
-CELL_PARAMETERS angstrom
+CELL_PARAMETERS (angstrom)
    2.1390827473 -1.235000000   0.000000000
    2.1390827473  1.235000000   0.000000000
    0.000000000   0.000000000  20.000000000
@@ -186,4 +187,20 @@ C        0.000000000   0.000000000   0.500000000
 C        0.333333333   0.333333333   0.500000000
 
 K_POINTS automatic
- 10 10 1   0  0  0
+  10  10  1   0  0  0
+
+!CONSTRAINTS
+!   nconstr             =   0
+!   constr_tol          =   0.d0
+!   constr_type         =   'type_coord'
+!   constr(1) = 1, constr(2) = 2, constr(3) = 3, constr(4) = 1.d0
+!   constr_target       =   0.d0
+!
+!OCCUPATIONS
+!  f_inp1(1) = 1.0, f_inp1(2) = 1.0, f_inp1(3) = 1.0, f_inp1(4) = 1.0
+!  f_inp2(1) = 1.0, f_inp2(2) = 1.0, f_inp2(3) = 1.0, f_inp2(4) = 1.0
+!
+!ATOMIC_FORCES
+!C       0.00   0.00  0.123
+!C       0.00   0.00 -0.123
+
