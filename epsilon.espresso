@@ -1,0 +1,15 @@
+&INPUTPP
+    prefix              =    'pwscf'
+    outdir              =    '.'
+    calculation         =    'eps'
+/
+
+&ENERGY_GRID
+    smeartype           =    'gauss'
+    intersmear          =    5.d-4
+    intrasmear          =    0.d0
+    wmax                =    30.0d0
+    wmin                =    0.0d0
+    nw                  =    10001
+    shift               =    0.0d0
+/
