@@ -103,8 +103,8 @@
 !   esm_efield          =    0.d0
 !   esm_nfit            =    4
 !   fcp_mu              =    0.d0
-
-! van der Waals correction (local)
+!
+!    van der Waals correction (local)
 !   vdw_corr            =    'grimme-d2'
 !   london_s6           =    0.75
 !   london_c6(1)        =    0.d0

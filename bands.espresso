@@ -1,0 +1,14 @@
+&BANDS
+    prefix              =    'pwscf'
+    outdir              =    '.'
+    filband             =    'bands.dat'
+    spin_component      =    1
+!   lsigma(3)           =    .true.
+!   lp                  =    .true.
+!   filp                =    'p_matrix.dat'
+!   lsym                =    .true.
+!     firstk            =    1
+!     lastk             =    10
+!    no_overlap          =    .false.
+!    plot_2d             =    .false.
+/
