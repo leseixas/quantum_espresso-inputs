@@ -1,4 +1,4 @@
- Graphene
+Graphene
 &INPUTPH
     prefix              =    'pwscf'
     outdir              =    '.'
