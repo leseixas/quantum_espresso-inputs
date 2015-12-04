@@ -3,7 +3,7 @@
     prefix              =    'pwscf'
     title               =    'Graphene'
     restart_mode        =    'from_scratch'
-!   nstep               =     1
+!   nstep               =    1
 !   outdir              =    '.'
 !   wfcdir              =    '.'
     pseudo_dir          =    '~/espresso-5.2.1/pseudo'
