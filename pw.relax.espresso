@@ -1,177 +1,177 @@
 &CONTROL
-                        calculation    =    'relax'
-                             prefix    =    'pwscf'
-                              title    =    'Graphene'
-                       restart_mode    =    'from_scratch'
-!                             nstep    =    1
-!                            outdir    =    '.'
-!                            wfcdir    =    '.'
-                         pseudo_dir    =    '~/espresso-5.2.1/pseudo'
-!                       lkpoint_dir    =    .true.
-    verbosity                          =    'high'
-    wf_collect                         =    .true.
-!   disk_io                            =    'low'
-!   iprint                             =    10
-!   tstress                            =    .false.
-!   tprnfor                            =    .false.
-!   dt                                 =    20.D0
-!   max_seconds                        =    1.D+7
-    etot_conv_thr                      =    1.0D-4
-    forc_conv_thr                      =    3.889D-4
-!   tefield                            =    .false.
-!   dipfield                           =    .false.
-!   lelfield                           =    .false.
-!   nberrycyc                          =    1
-!   lorbm                              =    .false.
-!   lberry                             =    .false.
-!   gdir                               =    3
-!   nppstr                             =    10
-!   lfcpopt                            =    .false.
+                   calculation    =    'relax'
+                        prefix    =    'pwscf'
+                         title    =    'Graphene'
+                  restart_mode    =    'from_scratch'
+!                        nstep    =    1
+!                       outdir    =    '.'
+!                       wfcdir    =    '.'
+                    pseudo_dir    =    '~/espresso-5.2.1/pseudo'
+!                  lkpoint_dir    =    .true.
+                     verbosity    =    'high'
+                    wf_collect    =    .true.
+!                      disk_io    =    'low'
+!                       iprint    =    10
+!                      tstress    =    .false.
+!                      tprnfor    =    .false.
+!                           dt    =    20.D0
+!                  max_seconds    =    1.D+7
+                 etot_conv_thr    =    1.0D-4
+                 forc_conv_thr    =    3.889D-4
+!                      tefield    =    .false.
+!                     dipfield    =    .false.
+!                     lelfield    =    .false.
+!                    nberrycyc    =    1
+!                        lorbm    =    .false.
+!                       lberry    =    .false.
+!                         gdir    =    3
+!                       nppstr    =    10
+!                      lfcpopt    =    .false.
 /
 
 &SYSTEM
-    ibrav               =    0
-    nat                 =    2
-    ntyp                =    1
-    nbnd                =    20
-!   tot_charge          =    0.0
-    ecutwfc             =    60.0
-!   ecutrho             =    240.0
-!   nr1  = 40, nr2  = 40, nr3  = 200
-!   nr1s = 40, nr2s = 40, nr3s = 200
-    nspin               =    1
-!   noncolin            =    .false.
-!   lspinorb            =    .false.
-!   nosym               =    .true.
-!   nosym_evc           =    .false.
-!   noinv               =    .false.
-!   no_t_rev            =    .false.
-!   force_symmorphic    =    .false.
-!   space_group         =    0
-!   uniqueb             =    .false.
-!   origin_choice       =    1
-!   rhombohedral        =    .true.
-!   tot_magnetization   =    -1
-!   starting_magnetization(1) = 1.0
-!   starting_magnetization(2) = 0.0
-!   starting_spin_angle =    .false.
-!   angle1(1)           =    90
-!   angle2(1)           =    0
-!   constrained_magnetization = 'none'
-!   fixed_magnetization(1) = 0.D0
-!   lambda              =    1.D0
-!   report              =    1
-!   use_all_frac        =    .false.
-    occupations         =    'smearing'
-      smearing          =    'fermi-dirac'
-      degauss           =    1.D-3
-!   one_atom_occupations =   .false.
-!   q2sigma             =    0.1
-!   qcutz               =    0.0
-!   ecfixed             =    0.0
-!   input_dft           =    'hse'
+    ibrav                         =    0
+    nat                           =    2
+    ntyp                          =    1
+    nbnd                          =    20
+!   tot_charge                    =    0.0
+    ecutwfc                       =    60.0
+!   ecutrho                       =    240.0
+!                 nr1  = 40, nr2  = 40, nr3  = 200
+!                 nr1s = 40, nr2s = 40, nr3s = 200
+    nspin                         =    1
+!   noncolin                      =    .false.
+!   lspinorb                      =    .false.
+!   nosym                         =    .true.
+!   nosym_evc                     =    .false.
+!   noinv                         =    .false.
+!   no_t_rev                      =    .false.
+!   force_symmorphic              =    .false.
+!   space_group                   =    0
+!   uniqueb                       =    .false.
+!   origin_choice                 =    1
+!   rhombohedral                  =    .true.
+!   tot_magnetization             =    -1
+!   starting_magnetization(1)     =    1.0
+!   starting_magnetization(2)     =    0.0
+!   starting_spin_angle           =    .false.
+!   angle1(1)                     =    90
+!   angle2(1)                     =    0
+!   constrained_magnetization     =    'none'
+!   fixed_magnetization(1)        =    0.D0
+!   lambda                        =    1.D0
+!   report                        =    1
+!   use_all_frac                  =    .false.
+    occupations                   =    'smearing'
+      smearing                    =    'fermi-dirac'
+      degauss                     =    1.D-3
+!   one_atom_occupations          =   .false.
+!   q2sigma                       =    0.1
+!   qcutz                         =    0.0
+!   ecfixed                       =    0.0
+!   input_dft                     =    'hse'
 !
 !    Hybrid XC functional
-!   ecutfock            =    240.0
-!   exx_fraction        =    0.25
-!   screening_parameter =    0.106
-!   exxdiv_treatment    =    'gygi-baldereschi'
-!   ecutvcut            =    0.0
-!   x_gamma_extrapolation = .true.
-!   nqx1 = 4, nqx2 = 4, nqx3 = 1
+!   ecutfock                      =    240.0
+!   exx_fraction                  =    0.25
+!   screening_parameter           =    0.106
+!   exxdiv_treatment              =    'gygi-baldereschi'
+!   ecutvcut                      =    0.0
+!   x_gamma_extrapolation         = .true.
+!                  nqx1 = 4, nqx2 = 4, nqx3 = 1
 !
 !    DFT+U
-!   lda_plus_u          =    .false.
-!   lda_plus_u_kind     =    0
-!   Hubbard_U(1)        =    0.D0
-!   Hubbard_J0(1)       =    0.D0
-!   Hubbard_alpha(1)    =    0.D0
-!   Hubbard_beta(1)     =    0.D0
-!   Hubbard_J(1)        =    0.D0
-!   U_projection_type   =    'atomic'
-!   starting_ns_eigenvalue(2,1,2) = -1.d0
+!   lda_plus_u                    =    .false.
+!   lda_plus_u_kind               =    0
+!   Hubbard_U(1)                  =    0.D0
+!   Hubbard_J0(1)                 =    0.D0
+!   Hubbard_alpha(1)              =    0.D0
+!   Hubbard_beta(1)               =    0.D0
+!   Hubbard_J(1)                  =    0.D0
+!   U_projection_type             =    'atomic'
+!   starting_ns_eigenvalue(2,1,2) =   -1.d0
 !
 !    Electric fields
-!   edir                =    3
-!   emaxpos             =    0.5D0
-!   eopreg              =    0.1D0
-!   eamp                =    0.001
+!   edir                          =    3
+!   emaxpos                       =    0.5D0
+!   eopreg                        =    0.1D0
+!   eamp                          =    0.001
 !
-!   assume_isolated     =    'none'
-!   esm_bc              =    'pbc'
-!   esm_w               =    0.d0
-!   esm_efield          =    0.d0
-!   esm_nfit            =    4
-!   fcp_mu              =    0.d0
+!   assume_isolated               =    'none'
+!   esm_bc                        =    'pbc'
+!   esm_w                         =    0.d0
+!   esm_efield                    =    0.d0
+!   esm_nfit                      =    4
+!   fcp_mu                        =    0.d0
 !
 !    van der Waals correction (local)
-!   vdw_corr            =    'grimme-d2'
-!   london_s6           =    0.75
-!   london_c6(1)        =    0.d0
-!   london_rcut         =    200
-!   xdm1                =    0.6836
-!   xdm2                =    1.5045
+!   vdw_corr                      =    'grimme-d2'
+!   london_s6                     =    0.75
+!   london_c6(1)                  =    0.d0
+!   london_rcut                   =    200
+!   xdm1                          =    0.6836
+!   xdm2                          =    1.5045
 /
 
 &ELECTRONS
-!   adaptive_thr        =    .false.
-!   conv_thr_init       =    1.D-5
-!   conv_thr_multi      =    1.D-1
-    conv_thr            =    1.D-8
-    scf_must_converge   =    .true.
-    electron_maxstep    =    300
-    diagonalization     =    'david'
-    diago_david_ndim    =    4
-!   diago_full_acc      =    .false.
-    diago_thr_init      =    1.D-3
-    diago_cg_maxiter    =    100
-!   mixing_mode         =    'plain'
-!   mixing_beta         =    0.7
-!   mixing_ndim         =    8
-!   mixing_fixed_ns     =    0
-!   tqr                 =    .false.
-!   startingpot         =    'atomic'
-!   startingwfc         =    'atomic+random'
+!   adaptive_thr                  =    .false.
+!   conv_thr_init                 =    1.D-5
+!   conv_thr_multi                =    1.D-1
+    conv_thr                      =    1.D-8
+    scf_must_converge             =    .true.
+    electron_maxstep              =    300
+    diagonalization               =    'david'
+    diago_david_ndim              =    4
+!   diago_full_acc                =    .false.
+    diago_thr_init                =    1.D-3
+    diago_cg_maxiter              =    100
+!   mixing_mode                   =    'plain'
+!   mixing_beta                   =    0.7
+!   mixing_ndim                   =    8
+!   mixing_fixed_ns               =    0
+!   tqr                           =    .false.
+!   startingpot                   =    'atomic'
+!   startingwfc                   =    'atomic+random'
 !
 ! Electric field for (lelfield = .true.), 1 a.u. = 3.636D+11 V/m
-!   efield              =    0.D0
-!   efield_cart(1)      =    0.D0
-!   efield_cart(2)      =    0.D0
-!   efield_cart(3)      =    0.D0
+!   efield                        =    0.D0
+!   efield_cart(1)                =    0.D0
+!   efield_cart(2)                =    0.D0
+!   efield_cart(3)                =    0.D0
 /
 
 &IONS
-    ion_dynamics        =    'bfgs'
-!   ion_positions       =    'default'
-!   pot_extrapolation   =    'atomic'
-!   wfc_extrapolation   =    'none'
-!   remove_grid_rot     =    .false.
+    ion_dynamics                  =    'bfgs'
+!   ion_positions                 =    'default'
+!   pot_extrapolation             =    'atomic'
+!   wfc_extrapolation             =    'none'
+!   remove_grid_rot               =    .false.
 !
 ! BFGS calculations
-!   bfgs_ndim           =    1
-!   upscale             =    100.D0
-!   trust_radius_max    =    0.8
-!   trust_radius_min    =    0.001
-!   trust_radius_ini    =    0.5
-!   w_1                 =    0.01
-!   w_2                 =    0.5
+!   bfgs_ndim                     =    1
+!   upscale                       =    100.D0
+!   trust_radius_max              =    0.8
+!   trust_radius_min              =    0.001
+!   trust_radius_ini              =    0.5
+!   w_1                           =    0.01
+!   w_2                           =    0.5
 !
 ! Molecular dynamics
-!   ion_temperature     =    'not_controlled'
-!   tempw               =    300.D0
-!   tolp                =    100.D0
-!   nraise              =    1
-!   delta_t             =    1.D0
-!   refold_pos          =    .false.
+!   ion_temperature               =    'not_controlled'
+!   tempw                         =    300.D0
+!   tolp                          =    100.D0
+!   nraise                        =    1
+!   delta_t                       =    1.D0
+!   refold_pos                    =    .false.
 /
 
 &CELL
-!   cell_dynamics       =    'bfgs'
-!   cell_dofree         =    'xy'
-!   cell_factor         =    1.2
-!   press               =    0.0
-!   press_conv_thr      =    0.5
-!   wmass               =    10.97
+!   cell_dynamics                 =    'bfgs'
+!   cell_dofree                   =    'xy'
+!   cell_factor                   =    1.2
+!   press                         =    0.0
+!   press_conv_thr                =    0.5
+!   wmass                         =    10.97
 /
 
 ATOMIC_SPECIES
