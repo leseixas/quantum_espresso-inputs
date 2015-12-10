@@ -1,0 +1,27 @@
+&INPUTPP
+              prefix    =    'pwscf'
+              outdir    =    '.'
+! 0 => electron charge density
+! 1 => total potential (ionic+Hartree+XC)
+! 2 => local ionic potential
+! 3 => local density of states (LDOS) at E_fermi
+! 4 => local density of electronic entropy
+! 5 => STM images
+! 6 => spin density (rho_up - rho_down)
+! 7 => selected wavefunction to charge density
+! 8 => electron localization function (ELF)
+! 9 => charge density minus atomic densities
+! 10 => integrated LDOS from emin to emax
+! 11 => ionic+Hartree potential
+! 12 => sawtooth electric potential
+! 13 => noncollinear magnetization
+! 17 => all-electron valence charge density
+! 18 => XC magnetic field in noncollinear case
+! 19 => Reduced density gradient
+! 20 => Product of the electron density and the second eigenvalue of the electron-density Hessian matrix
+            plot_num    =    0
+             filplot    =    'pp.dat'
+! if 0
+!     spin_component    =    0
+
+/
