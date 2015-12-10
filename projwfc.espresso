@@ -1,3 +1,20 @@
 &PROJWFC
-  prefix           =  'pwscf'
+              prefix    =    'pwscf'
+              outdir    =    '.'
+              ngauss    =    0
+             degauss    =    0.0
+!               Emin    =    -20.0
+!               Emax    =    +20.0
+!             DeltaE    =    0.01
+!               lsym    =    .true.
+!            filpdos    =    'pdos.dat'
+!            filproj    =    'proj.dat'
+!    lwrite_overlaps    =    .false.
+!       lbinary_data    =    .false.
+!       kresolveddos    =    .false.
+!        tdosinboxes    =    .false.
+!       n_proj_boxes    =    1
+!              irmin    =    1
+!              irmax    =    0
+!          plotboxes    =    .false.
 /

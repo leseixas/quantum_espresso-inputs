@@ -65,7 +65,7 @@
                    occupations    =    'smearing'
                       smearing    =    'fermi-dirac'
                        degauss    =    1.D-3
-!         one_atom_occupations    =   .false.
+!         one_atom_occupations    =    .false.
 !                      q2sigma    =    0.1
 !                        qcutz    =    0.0
 !                      ecfixed    =    0.0
@@ -77,7 +77,7 @@
 !          screening_parameter    =    0.106
 !             exxdiv_treatment    =    'gygi-baldereschi'
 !                     ecutvcut    =    0.0
-!        x_gamma_extrapolation    = .true.
+!        x_gamma_extrapolation    =    .true.
 !                  nqx1 = 4, nqx2 = 4, nqx3 = 1
 !
 ! DFT+U
@@ -89,7 +89,7 @@
 !              Hubbard_beta(1)    =    0.D0
 !                 Hubbard_J(1)    =    0.D0
 !            U_projection_type    =    'atomic'
-!starting_ns_eigenvalue(2,1,2)    =   -1.d0
+!starting_ns_eigenvalue(2,1,2)    =    -1.d0
 !
 ! Electric fields
 !                         edir    =    3
@@ -190,11 +190,11 @@ K_POINTS automatic
   10  10  1   0  0  0
 
 !CONSTRAINTS
-!                      nconstr    =   0
-!                   constr_tol    =   0.d0
-!                  constr_type    =   'type_coord'
+!                      nconstr    =    0
+!                   constr_tol    =    0.d0
+!                  constr_type    =    'type_coord'
 !  constr(1) = 1, constr(2) = 2, constr(3) = 3, constr(4) = 1.d0
-!                constr_target    =   0.d0
+!                constr_target    =    0.d0
 !
 !OCCUPATIONS
 !  f_inp1(1) = 1.0, f_inp1(2) = 1.0, f_inp1(3) = 1.0, f_inp1(4) = 1.0
