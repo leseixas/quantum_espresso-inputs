@@ -30,13 +30,13 @@
 /
 
 &SYSTEM
-    ibrav                         =    0
-    nat                           =    2
-    ntyp                          =    1
-    nbnd                          =    20
-!   tot_charge                    =    0.0
-    ecutwfc                       =    60.0
-!   ecutrho                       =    240.0
+                         ibrav    =    0
+                           nat    =    2
+                          ntyp    =    1
+                          nbnd    =    20
+!                   tot_charge    =    0.0
+                       ecutwfc    =    60.0
+!                      ecutrho    =    240.0
 !                 nr1  = 40, nr2  = 40, nr3  = 200
 !                 nr1s = 40, nr2s = 40, nr3s = 200
     nspin                         =    1
