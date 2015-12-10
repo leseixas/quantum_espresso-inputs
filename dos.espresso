@@ -1,0 +1,10 @@
+&DOS
+              prefix    =    'pwscf'
+              outdir    =    '.'
+              ngauss    =    0
+             degauss    =    1.D-3
+!               Emin    =    -20.0
+!               Emax    =    +20.0
+!             DeltaE    =    1.D-2
+              fildos    =    'dos.dat'
+/
