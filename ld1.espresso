@@ -1,23 +1,24 @@
-&input
-    title               =    'Te',
-    zed                 =    52.,
-    rel                 =    2,
-    config              =    '[Kr] 4d10.0 5s2.0 5p4.00 5d-2.0',
-    iswitch             =    3,
-    dft                 =    'PBE'
+&INPUT
+               title    =    'Te',
+                 zed    =    52.,
+                 rel    =    2,
+              config    =    '[Kr] 4d10.0 5s2.0 5p4.00 5d-2.0',
+             iswitch    =    3,
+                 dft    =    'PBE'
 /
-&inputp
-    lpaw                =    .true.,
-    pseudotype          =    3,
-    file_pseudopw       =    'Te.rel-pbe-dn-kjpaw_psl.0.2.2.UPF',
-    author              =    'LeandroSeixas',
-    lloc                =    -1,
-    rcloc               =    2.2,
-    which_augfun        =    'PSQ',
-    rmatch_augfun       =    1.7,
-    nlcc                =    .true.,
-    rcore               =    0.9,
-    tm                  =    .true.
+
+&INPUTP
+                lpaw    =    .true.,
+          pseudotype    =    3,
+       file_pseudopw    =    'Te.rel-pbe-dn-kjpaw_psl.0.2.2.UPF',
+              author    =    'LeandroSeixas',
+                lloc    =    -1,
+               rcloc    =    2.2,
+        which_augfun    =    'PSQ',
+       rmatch_augfun    =    1.7,
+                nlcc    =    .true.,
+               rcore    =    0.9,
+                  tm    =    .true.
 /
 6
 5S  1  0  2.00  0.00  1.70  2.00  0.0
