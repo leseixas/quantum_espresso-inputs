@@ -1,55 +1,55 @@
 Graphene
 &INPUTPH
-    prefix              =    'pwscf'
-    outdir              =    '.'
-    verbosity           =    'high'
-    reduce_io           =    .false.
-    low_directory_check =    .false.
-    recover             =    .false.
-    only_init           =    .false.
-    max_seconds         =    1.d+7
-    amass(1)            =    12.0107
-    niter_ph            =    100
-    tr2_ph              =    1.d-12
-    alpha_mix(1)        =    0.7
-    nmix_ph             =    4
-    fildyn              =    'matdyn'
-    fildrho             =    'rho.ph.out'
-    fildvscf            =    'vscf.ph.out'
-    epsil               =    .false.
-    lrpa                =    .false.
-    lnoloc              =    .false.
-    trans               =    .true.
+              prefix    =    'pwscf'
+              outdir    =    '.'
+           verbosity    =    'high'
+           reduce_io    =    .false.
+ low_directory_check    =    .false.
+             recover    =    .false.
+           only_init    =    .false.
+         max_seconds    =    1.d+7
+            amass(1)    =    12.0107
+            niter_ph    =    100
+              tr2_ph    =    1.d-12
+        alpha_mix(1)    =    0.7
+             nmix_ph    =    4
+              fildyn    =    'matdyn'
+             fildrho    =    'rho.ph.out'
+!           fildvscf    =    'vscf.ph.out'
+               epsil    =    .false.
+                lrpa    =    .false.
+              lnoloc    =    .false.
+!              trans    =    .true.
 ! Raman options
-    lraman              =   .false.
-    eth_rps             =   1.0d-9
-    eth_ns              =   1.0d-12
-    dek                 =   1.0d-3
-
-    qplot               =   .false.
-    q2d                 =   .false.
-    q_in_band_form      =   .false.
-    electron_phonon     =   'simple'
-    zeu                 =   .false.
-    zue                 =   .false.
-    elop                =   .false.
-    fpol                =   .false.
-    ldisp               =   .false.
-    nogg                =   .false.
-    ldiag               =   .false.
-    lqdir               =   .false.
-    search_sym          =   .true.
-    nq1 = 1, nq2 = 1, nq3 = 1
-    nk1 = 1, nk2 = 1, nk3 = 1
-    k1 = 0, k2 = 0, k3 = 0
-!    Irreducible representation
-!   start_irr            =    1
-!   last_irr             =    6
-!   nat_todo             =    0
-!   modenum              =    0
-!      q-point specification
-!   start_q              =    1
-!   last_q               =    16
+!             lraman    =    .false.
+!            eth_rps    =    1.0d-9
+!             eth_ns    =    1.0d-12
+!                dek    =    1.0d-3
+!
+!              qplot    =    .false.
+!                q2d    =    .false.
+!     q_in_band_form    =    .false.
+!    electron_phonon    =    'simple'
+!                zeu    =    .false.
+!                zue    =    .false.
+!               elop    =    .false.
+!               fpol    =    .false.
+!              ldisp    =    .false.
+!               nogg    =    .false.
+!              ldiag    =    .false.
+!              lqdir    =    .false.
+!         search_sym    =    .true.
+!          nq1 = 1, nq2 = 1, nq3 = 1
+!          nk1 = 1, nk2 = 1, nk3 = 1
+!            k1 = 0, k2 = 0, k3 = 0
+! Irreducible representation
+!          start_irr    =    1
+!           last_irr    =    6
+!           nat_todo    =    0
+!            modenum    =    0
+! q-point specification
+!            start_q    =    1
+!             last_q    =    16
 /
 
 qPointsSpecs
