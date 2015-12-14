@@ -1,0 +1,36 @@
+&INPUT_WEST
+                qe_prefix    =    'pwscf'
+              west_prefix    =    'west'
+                   outdir    =    '.'
+/
+
+&WSTAT_CONTROL
+        wstat_calculation    =    'S'
+             n_pdep_eigen    =    4
+             n_pdep_times    =    4
+           n_pdep_maxiter    =    100
+           n_dfpt_maxiter    =    250
+    n_pdep_read_from_file    =    0
+                trev_pdep    =    1.D-3
+                 tr2_dfpt    =    1.D-12
+           l_kinetic_only    =    .false.
+ l_maximize_exx_if_active    =    .false.
+/
+
+&WFREQ_CONTROL
+        wfreq_calculation    =    'XWGQ'
+!     n_pdep_eigen_to_use    =    2
+          qp_bandrange(1)    =    10
+          qp_bandrange(2)    =    20
+!    macropol_calculation    =    'N'
+!               n_lanczos    =    10
+!                n_imfreq    =    10
+!                n_refreq    =    10
+!             ecut_imfreq    =    1.D0
+!             ecut_refreq    =    1.D0
+!               wfreq_eta    =    0.003675D0
+!        n_secant_maxiter    =    7
+!             trev_secant    =    0.003675D0
+!        l_enable_lanczos    =    .true.
+!          o_restart_time    =    0.D0
+/
