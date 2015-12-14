@@ -3,7 +3,7 @@
 Templates to create Quantum ESPRESSO inputs with all tags availables.
 The files are named with `*.espresso` extension.
 
-The input file descriptions can be found in the [quantum-espresso.org][]
+The input file descriptions can be found in the [Quantum ESPRESSO](http://www.quantum-espresso.org)
 website
 
 * [pw.x](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_PW.html)
@@ -22,7 +22,6 @@ website
     - [turbo\_lanczos.x](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_Lanczos.html)
     - [turbo\_spectrum.x](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_Spectrum.html)
     - [turbo\_davidson.x](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_Davidson.html)
-* [xspectra.x](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_XSpectra.txt)
 * West
     - [wstat.x](http://www.west-code.org/doc/INPUT_WSTAT.html)
     - [wfreq.x](http://www.west-code.org/doc/INPUT_WFREQ.html)
