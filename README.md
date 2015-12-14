@@ -3,7 +3,7 @@
 Templates to create Quantum ESPRESSO inputs with all tags availables.
 The files are named with `*.espresso` extension.
 
-The input file descriptions can be found in the quantum-espresso.org
+The input file descriptions can be found in the [quantum-espresso.org][]
 website
 
 * [pw.x](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_PW.html)
