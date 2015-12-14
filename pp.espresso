@@ -21,7 +21,29 @@
 ! 20 => Product of the electron density and the second eigenvalue of the electron-density Hessian matrix
             plot_num    =    0
              filplot    =    'pp.dat'
-! if 0
+! if plot_num = 0, 1, 10, 17.   0 - total, 1 - up, 2 - down
+! if plot_num = 7, 13.          0 - total, 1 - x, 2 - y, 3 - z
 !     spin_component    =    0
+!        sample_bias    =    0.d0
+!            kpoints    =    1
+!              kband    =    10
+!              lsign    =    .false.
+!               emin    =    -20.0
+!               emax    =    +20.0
+/
 
+&PLOT
+!              nfile    =    1
+!          filepp(1)    =    'filplot'
+!          weight(1)    =    1.0
+!              iflag    =    2
+!      output_format    =    0
+!            fileout    =    'fileplot.dat'
+!      interpolation    =    'fourier'
+!    e1(1) = 0.0, e1(2) = 0.0, e1(3) = 1.0
+!    x0(1) = 0.0, x0(2) = 0.0, x0(3) = 0.0
+!                 nx    =    200
+!                 ny    =    200
+!                 nz    =    200
+!             radius    =    2.0
 /
