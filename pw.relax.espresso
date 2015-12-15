@@ -36,15 +36,15 @@
                           nbnd    =    20
 !                   tot_charge    =    0.0
                        ecutwfc    =    60.0
-!                      ecutrho    =    240.0
+                       ecutrho    =    240.0
 !                 nr1  = 40, nr2  = 40, nr3  = 200
 !                 nr1s = 40, nr2s = 40, nr3s = 200
                          nspin    =    1
 !                     noncolin    =    .false.
 !                     lspinorb    =    .false.
-!                        nosym    =    .true.
+                         nosym    =    .false.
 !                    nosym_evc    =    .false.
-!                        noinv    =    .false.
+                         noinv    =    .false.
 !                     no_t_rev    =    .false.
 !             force_symmorphic    =    .false.
 !                  space_group    =    0
@@ -124,7 +124,7 @@
               diago_david_ndim    =    4
 !               diago_full_acc    =    .false.
                 diago_thr_init    =    1.D-3
-              diago_cg_maxiter    =    100
+!             diago_cg_maxiter    =    100
 !                  mixing_mode    =    'plain'
 !                  mixing_beta    =    0.7
 !                  mixing_ndim    =    8
