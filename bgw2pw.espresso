@@ -1,0 +1,10 @@
+&INPUT_BGW2PW
+              prefix    =    'pwscf'
+              outdir    =    '.'
+     real_or_complex    =    2
+           wfng_flag    =    .false.
+           wfng_file    =    'WFN'
+          wfng_nband    =    0
+           rhog_flag    =    .false.
+           rhog_file    =    'RHO'
+/
