@@ -1,0 +1,10 @@
+&INPUT
+! Acoustic Sum Rule (ASR) = 'no' | 'simple' | 'crystal' | 'one-dim' | 'zero-dim'
+            asr    =    'simple'
+         fildyn    =    'matdyn'
+         filfrc    =    'ifc.dat'
+! if "fildyn"0 is not found
+!    nr1 = 10, nr2 = 10, nr3 = 10
+!         nfile    =    10
+!         filin    =    'opt_matdyn'
+/
