@@ -1,0 +1,15 @@
+&INPUT
+! Acoustic Sum Rule (ASR) = 'no' | 'simple' | 'crystal' | 'one-dim' | 'zero-dim'
+            asr    =    'simple'
+         fildyn    =    'matdyn'
+         filout    =    'dynmat.out'
+!        fileig    =    'dynmat.eig'
+!        filmol    =    'dynmat.mold'
+         filxsf    =    'dynmat.axsf'
+!      amass(1)    =    12.00
+!      amass(2)    =    1.00
+!          axis    =    3
+!         lperm    =    .false.
+!       lplasma    =    .false.
+! q(1) = 0.0, q(2) = 0.0, q(3) = 0.0
+/
