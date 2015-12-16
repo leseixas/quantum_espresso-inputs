@@ -1,0 +1,24 @@
+&INPUT
+! Acoustic Sum Rule (ASR) = 'no' | 'simple' | 'crystal' | 'one-dim' | 'zero-dim'
+                 asr    =    'simple'
+              filfrc    =    'ifc.dat'
+!                dos    =    .false.
+!         nk1 = 10, nk2 = 10, nk3 = 10
+              deltaE    =    1.0
+                ndos    =    1000
+               fldos    =    'dos_ph.dat'
+               flfrq    =    'matdyn.freq'
+               flvec    =    'matdyn.modes'
+               fleig    =    'matdyn.eig'
+               fldyn    =    'matdyn.dat'
+             l1 = 2, l2 = 2, l3 = 2
+!               ntyp    =    1
+!           amass(1)    =    12.000
+!           amass(2)    =    1.00
+!            readtau    =    .false.
+!              fltau    =    'matdyn.tau'
+!               la2F    =    .true.
+!     q_in_band_form    =    .false.
+    q_in_cryst_coord    =    .true.
+!   eigen_similarity    =    .false.
+/
