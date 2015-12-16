@@ -1,0 +1,16 @@
+&INPUTPH
+              prefix    =    'pwscf'
+              outdir    =    '.'
+             fildrho    =    'drho.dat'
+            fild0rho    =    'd0rho.dat'
+            amass(1)    =    12.00
+            amass(2)    =    1.00
+              fildyn    =    'd3dyn'
+!            ethr_ph    =    1.0d-5
+!     q0mode_todo(1)    =    0
+!     q0mode_todo(2)    =    0
+!              wraux    =    .false.
+!               recv    =    .false.
+!              istop    =    0
+          iverbosity    =    1
+/
