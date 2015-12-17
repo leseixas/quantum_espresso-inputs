@@ -1,0 +1,48 @@
+&INPUTCOND
+              outdir    =    '.'
+             prefixt    =    'pwscf.tot'
+             prefixl    =    'pwscf.left'
+             prefixs    =    'pwscf.scattering'
+             prefixr    =    'pwscf.right'
+         tran_prefix    =    'tran_predix.cond_save'
+!        max_seconds    =    1.0D+7
+!            recover    =    .false.
+           band_file    =    'bands.cplx'
+           tran_file    =    'transmission.dat'
+!          save_file    =    'pwscf'
+!            fil_loc    =    '2d.eig'
+         lwrite_cond    =    .true.
+!            loop_ek    =    .false.
+          lread_cond    =    .false.
+          lwrite_loc    =    .false.
+           lread_loc    =    .false.
+               ikind    =    1
+!            iofspin    =    1
+!            tk_plot    =    2
+              llocal    =    .false.
+!                bdl    =    1.0d0
+!                bds    =    1.0d0
+!                bdr    =    1.0d0
+!                nz1    =    4
+!            energy0    =    -5.0
+!            denergy    =    -5.0
+!            nenergy    =    100
+!            start_e    =    1
+!             last_e    =    40
+!            start_k    =    1
+!             last_k    =    40
+!             ecut2d    =    1.0d0
+!              ewind    =    1.0d0
+!            epsproj    =    1.0d-2
+!            orbj_in    =    1.0d0
+!           orbj_fin    =    1.0d0
+/
+
+K_and_Energy_Points
+  5
+   0.1  0.0   0.2
+   0.2  0.0   0.2
+   0.3  0.0   0.2
+   0.4  0.0   0.2
+   0.5  0.0   0.2
+  100
