@@ -1,0 +1,17 @@
+&LR_INPUT
+              prefix    =    'pwscf'
+              outdir    =    '.'
+           verbosity    =    1
+            itermax0    =    500
+             itermax    =    500
+       extrapolation    =    'no'
+               epsil    =    0.02
+               units    =    0
+               start    =    0.0
+                 end    =    2.50
+           increment    =    0.01
+                ipol    =    1
+                eels    =    .false.
+                  td    =    'lanczos'
+           eign_file    =    'pwscf.eigen'
+/
