@@ -1,0 +1,20 @@
+&INPUTPP
+              prefix    =    'cp'
+             fileout    =    'out'
+              output    =    'xsf'
+              outdir    =    '.'
+             lcharge    =    .false.
+             lforces    =    .false.
+           ldynamics    =    .false.
+                lpdb    =    .false.
+           lrotation    =    .false.
+           ns1 = 0, ns2 = 0, ns3 = 0
+           np1 = 1, np2 = 1, np3 = 1
+             nframes    =    1
+                 ndr    =    51
+    atomic_number(1)    =    12
+    atomic_number(2)    =    1
+      charge_density    =    'full'
+               state    =    'KS_1'
+             lbinary    =    .true.
+/
