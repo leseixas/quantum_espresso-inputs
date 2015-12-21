@@ -1,0 +1,31 @@
+
+            num_wann    =    4
+            num_iter    =    20
+!       wannier_plot    =    .true.
+!            restart    =    plot
+!  wannier_plot_list    =    1 3
+
+! SYSTEM
+begin unit_cell_cart
+Ang
+ -5.367  0.000  5.367
+  0.000  5.367  5.367
+  5.367 -5.367  0.000
+end unit_cell_cart
+
+begin atom_frac
+Ga  0.000  0.000  0.000
+As  0.250  0.250  0.250
+end atom_frac
+
+begin projections
+As: sp3
+end projections
+
+! KPOINTS
+
+mp_grid   =   2  2  2
+
+
+
+
